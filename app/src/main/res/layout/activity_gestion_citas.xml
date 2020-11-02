@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddCitasActivity">
+
+    <EditText
+        android:id="@+id/txtNombreCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtApellidosCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtFechaCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Fecha de la Cita"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/txtFechaNacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Fecha Nacimiento"
+        android:inputType="date" />
+
+    <Switch
+        android:id="@+id/swAutorizado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Autorizado"
+        android:textAlignment="textEnd"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/txtFianzaCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Fianza"
+        android:inputType="numberDecimal" />
+
+    <Switch
+        android:id="@+id/swColorCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Tattoo a Color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEliminarCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="eliminar"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnGuardarCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="Crear" />
+    </LinearLayout>
+</LinearLayout>
